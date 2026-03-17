@@ -14,6 +14,9 @@
 </head>
 
 <body>
+    <!-- Language Picker (moved to page level) -->
+    <div id="lang-picker" class="lang-picker"></div>
+
     <div id="redirect-overlay" class="overlay hidden">
         <div class="overlay-content">
             <div class="loader"></div>
@@ -36,8 +39,6 @@
     <main class="container">
         <header>
             <h1 class="glow-text" data-i18n="headerTitle">CVR DeepLink</h1>
-            <!-- Language Picker -->
-            <div id="lang-picker" class="lang-picker"></div>
         </header>
 
         <div class="glass-card">
@@ -115,10 +116,11 @@
                 <span class="value" id="stat-other">...</span>
             </div>
         </footer>
-        <div class="site-disclaimer" data-i18n="disclaimer">
-            This website is not run by or affiliated with ChilloutVR or the ChilloutVR team in any way.
-        </div>
     </main>
+
+    <div class="site-disclaimer" data-i18n="disclaimer">
+        This website is not run by or affiliated with ChilloutVR or the ChilloutVR team in any way.
+    </div>
 
     <script src="i18n.js"></script>
     <script src="script.js"></script>

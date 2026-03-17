@@ -47,10 +47,10 @@ header {
 
 /* ── Language Picker ─────────────────────────────────── */
 .lang-picker {
-    position: absolute;
-    top: 0;
-    right: 0;
-    z-index: 100;
+    position: fixed;
+    top: 1.5rem;
+    right: 1.5rem;
+    z-index: 1000;
 }
 
 .lang-btn {
@@ -511,14 +511,18 @@ input:focus, select:focus {
 }
 
 .site-disclaimer {
+    position: fixed;
+    bottom: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
     text-align: center;
     font-size: 0.65rem;
     color: var(--text-muted);
     opacity: 0.6;
-    margin-top: 1.5rem;
-    padding-bottom: 1rem;
+    padding: 0 1rem;
     line-height: 1.4;
-    max-width: 400px;
-    margin-left: auto;
-    margin-right: auto;
+    max-width: 500px;
+    width: 100%;
+    z-index: 100;
+    pointer-events: none; /* Don't interfere with clicks */
 }
