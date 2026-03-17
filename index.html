@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CVR DeepLink Generator</title>
+    <meta name="description"
+        content="Generate and share ChilloutVR deeplinks easily. Proxy links that work everywhere.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="redirect-overlay" class="overlay hidden">
+        <div class="overlay-content">
+            <div class="loader"></div>
+            <h1 data-i18n="overlayTitle">Redirecting to ChilloutVR...</h1>
+            <p id="redirect-subtext" data-i18n="overlaySubJoin">Preparing your instance join...</p>
+            <div class="countdown-container">
+                <p>
+                    <span data-i18n="overlayCountdown">This tab will close or redirect in</span>
+                    <span id="countdown">5</span>
+                    <span data-i18n="overlayCountdownSuffix">seconds</span>
+                </p>
+            </div>
+            <div class="overlay-actions">
+                <a href="./" class="btn secondary" data-i18n="overlayGenerateOwn">Generate Your Own Link</a>
+                <a id="manual-link" href="#" class="btn link-text" data-i18n="overlayLaunchAgain">Launch again</a>
+            </div>
+        </div>
+    </div>
+
+    <main class="container">
+        <header>
+            <h1 class="glow-text" data-i18n="headerTitle">CVR DeepLink</h1>
+            <!-- Language Picker -->
+            <div id="lang-picker" class="lang-picker"></div>
+        </header>
+
+        <div class="glass-card">
+            <div class="unified-input-section">
+                <div class="detection-badge hidden" id="detectionBadge">
+                    <span class="badge-text" id="badgeText">Detected: Avatar</span>
+                </div>
+
+                <div class="input-group">
+                    <label for="smartInput" data-i18n="inputLabel">ID, Prefix, or Link</label>
+                    <input type="text" id="smartInput"
+                        data-i18n-placeholder="inputPlaceholder"
+                        placeholder="i+bab27..., a+..., or chilloutvr://..."
+                        autocomplete="off">
+                    <small data-i18n="inputHint">Paste a UUID, a prefixed ID, or a full protocol link</small>
+                </div>
+
+                <!-- Conditional Entity Selector -->
+                <div class="input-group hidden" id="entitySelector">
+                    <label for="entityType" data-i18n="entitySelectLabel">Select Entity Type</label>
+                    <select id="entityType">
+                        <option value="world" data-i18n="entityWorld">World</option>
+                        <option value="avatar" data-i18n="entityAvatar">Avatar</option>
+                        <option value="user" data-i18n="entityUser">User</option>
+                        <option value="prop" data-i18n="entityProp">Prop</option>
+                        <option value="instance" data-i18n="entityInstance">Instance Details</option>
+                        <option value="group" data-i18n="entityGroup">Group</option>
+                    </select>
+                </div>
+
+                <!-- Conditional Instance Options -->
+                <div class="options-grid hidden" id="instanceOptions">
+                    <div class="check-group">
+                        <input type="checkbox" id="startInVR">
+                        <label for="startInVR" data-i18n="startInVR">Start in VR?</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="result-section">
+                <div class="btn-group">
+                    <button id="generateAndCopyBtn" class="btn primary" data-i18n="generateAndCopyBtn">Generate and copy to clipboard</button>
+                    <button id="generateBtn" class="btn secondary" data-i18n="generateBtn">Generate Link</button>
+                </div>
+
+                <div id="resultWrapper" class="result-wrapper hidden">
+                    <div class="link-area">
+                        <input type="text" id="generatedUrl" readonly>
+                        <button id="copyBtn" class="btn icon-btn" data-i18n-title="copyTitle" title="Copy to clipboard">
+                            <svg viewBox="0 0 24 24" width="24" height="24">
+                                <path fill="currentColor"
+                                    d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z" />
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="feedback-toast hidden" id="copyToast" data-i18n="copiedToast">Copied to clipboard!</div>
+                    <p class="preview-text">Protocol: <span id="rawProtocol">chilloutvr://...</span></p>
+                </div>
+            </div>
+        </div>
+
+        <footer class="stats-bar glass-card">
+            <div class="stat-item">
+                <span class="label" data-i18n="statTotalOnline">Total Online</span>
+                <span class="value" id="stat-overall">...</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+                <span class="label" data-i18n="statPublicInstances">Public Instances</span>
+                <span class="value" id="stat-public">...</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+                <span class="label" data-i18n="statOther">Other</span>
+                <span class="value" id="stat-other">...</span>
+            </div>
+        </footer>
+    </main>
+
+    <script src="i18n.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
