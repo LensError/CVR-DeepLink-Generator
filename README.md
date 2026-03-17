@@ -48,6 +48,12 @@ Simply host these files on any static web server (GitHub Pages, Vercel, etc.).
 
 ---
 
+---
+
+## Disclaimer
+
+This website is not run by or affiliated with ChilloutVR or the ChilloutVR team in any way.
+
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.

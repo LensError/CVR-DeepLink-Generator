@@ -47,6 +47,8 @@ const TRANSLATIONS = {
         detectedUUID: 'UUID (Select Type)',
         // Alert fallback
         alertEmptyInput: 'Please enter an ID or Link',
+        // Disclaimer footer
+        disclaimer: 'This website is not run by or affiliated with ChilloutVR or the ChilloutVR team in any way.',
     },
 
     fi: {
@@ -81,6 +83,7 @@ const TRANSLATIONS = {
         detectedPrefix: 'Havaittu',
         detectedUUID: 'UUID (Valitse tyyppi)',
         alertEmptyInput: 'Syötä tunnus tai linkki',
+        disclaimer: 'Tämä verkkosivusto ei ole ChilloutVR:n tai ChilloutVR-tiimin ylläpitämä tai siihen millään tavalla sidoksissa.',
     },
 
     de: {
@@ -115,6 +118,7 @@ const TRANSLATIONS = {
         detectedPrefix: 'Erkannt',
         detectedUUID: 'UUID (Typ auswählen)',
         alertEmptyInput: 'Bitte eine ID oder einen Link eingeben',
+        disclaimer: 'Diese Website wird in keiner Weise von ChilloutVR oder dem ChilloutVR-Team betrieben oder ist mit ihnen verbunden.',
     },
 
     ru: {
@@ -149,6 +153,7 @@ const TRANSLATIONS = {
         detectedPrefix: 'Определено',
         detectedUUID: 'UUID (Выберите тип)',
         alertEmptyInput: 'Пожалуйста, введите ID или ссылку',
+        disclaimer: 'Этот сайт не управляется и никак не связан с ChilloutVR или командой ChilloutVR.',
     },
 
     sv: {
@@ -183,6 +188,7 @@ const TRANSLATIONS = {
         detectedPrefix: 'Detekterat',
         detectedUUID: 'UUID (Välj typ)',
         alertEmptyInput: 'Ange ett ID eller en länk',
+        disclaimer: 'Denna webbplats drivs inte av eller är ansluten till ChilloutVR eller ChilloutVR-teamet på något sätt.',
     },
 
     no: {
@@ -217,6 +223,7 @@ const TRANSLATIONS = {
         detectedPrefix: 'Oppdaget',
         detectedUUID: 'UUID (Velg type)',
         alertEmptyInput: 'Skriv inn en ID eller lenke',
+        disclaimer: 'Dette nettstedet drives ikke av eller er tilknyttet ChilloutVR eller ChilloutVR-teamet på noen måte.',
     },
 
     ja: {
@@ -251,6 +258,7 @@ const TRANSLATIONS = {
         detectedPrefix: '検出済み',
         detectedUUID: 'UUID（タイプを選択）',
         alertEmptyInput: 'IDまたはリンクを入力してください',
+        disclaimer: 'このウェブサイトは、ChilloutVRまたはChilloutVRチームとは一切関係がなく、運営されてもいません。',
     },
 
     zh: {
@@ -285,6 +293,7 @@ const TRANSLATIONS = {
         detectedPrefix: '已检测',
         detectedUUID: 'UUID（请选择类型）',
         alertEmptyInput: '请输入 ID 或链接',
+        disclaimer: '本网站不以任何方式由 ChilloutVR 或 ChilloutVR 团队运营或与其关联。',
     },
 };
 
