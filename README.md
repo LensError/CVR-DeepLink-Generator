@@ -36,7 +36,7 @@ Simply host these files on any static web server (GitHub Pages, Vercel, etc.).
 - `index.html`: The core landing page.
 - `script.js`: Core logic for parsing and redirection.
 - `i18n.js`: Language engine and translation strings.
-- `style.css`: All premium styling and animations.
+- `style.css`: Styling.
 
 ---
 
