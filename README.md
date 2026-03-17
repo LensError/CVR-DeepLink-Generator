@@ -21,7 +21,6 @@ Generate and share ChilloutVR deeplinks effortlessly. High-performance proxy lin
   - Norsk
   - 日本語
   - 中文
-- **Glassmorphic UI:** Premium, modern design with fluid animations and responsive layout.
 
 ---
 
@@ -45,8 +44,6 @@ Simply host these files on any static web server (GitHub Pages, Vercel, etc.).
 
 - **Game:** [ChilloutVR](https://abinteractive.net/) by Alpha Blend Interactive.
 - **API:** Real-time stats powered by the ChilloutVR Public API.
-
----
 
 ---
 
