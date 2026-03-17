@@ -42,7 +42,7 @@ Simply host these files on any static web server (GitHub Pages, Vercel, etc.).
 
 ## Credits
 
-- **Game:** [ChilloutVR](https://abinteractive.net/) by Alpha Blend Interactive.
+- **Game:** [ChilloutVR](https://chilloutvr.net/)
 - **API:** Real-time stats powered by the ChilloutVR Public API.
 
 ---
