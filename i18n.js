@@ -32,7 +32,7 @@ const TRANSLATIONS = {
         copiedToast: 'Copied to clipboard!',
         // Footer stats
         statTotalOnline: 'Total Online',
-        statPublicInstances: 'Public Instances',
+        statPublicInstances: 'Public',
         statOther: 'Other',
         // Overlay
         overlayTitle: 'Redirecting to ChilloutVR...',
@@ -71,7 +71,7 @@ const TRANSLATIONS = {
         generateBtn: 'Luo linkki',
         copiedToast: 'Kopioitu leikepöydälle!',
         statTotalOnline: 'Yhteensä paikalla',
-        statPublicInstances: 'Julkiset instanssit',
+        statPublicInstances: 'Julkinen',
         statOther: 'Muut',
         overlayTitle: 'Siirrytään ChilloutVR:ään...',
         overlaySubJoin: 'Liitytään instanssiin...',
@@ -106,7 +106,7 @@ const TRANSLATIONS = {
         generateBtn: 'Link generieren',
         copiedToast: 'In Zwischenablage kopiert!',
         statTotalOnline: 'Insgesamt Online',
-        statPublicInstances: 'Öffentliche Instanzen',
+        statPublicInstances: 'Öffentlich',
         statOther: 'Andere',
         overlayTitle: 'Weiterleitung zu ChilloutVR...',
         overlaySubJoin: 'Instanz beitreten...',
@@ -141,7 +141,7 @@ const TRANSLATIONS = {
         generateBtn: 'Создать ссылку',
         copiedToast: 'Скопировано в буфер обмена!',
         statTotalOnline: 'Всего онлайн',
-        statPublicInstances: 'Публичные инстансы',
+        statPublicInstances: 'Публичные',
         statOther: 'Прочие',
         overlayTitle: 'Переходим в ChilloutVR...',
         overlaySubJoin: 'Подключение к инстансу...',
@@ -176,7 +176,7 @@ const TRANSLATIONS = {
         generateBtn: 'Generera länk',
         copiedToast: 'Kopierat till urklipp!',
         statTotalOnline: 'Totalt Online',
-        statPublicInstances: 'Offentliga instanser',
+        statPublicInstances: 'Offentliga',
         statOther: 'Övrigt',
         overlayTitle: 'Omdirigerar till ChilloutVR...',
         overlaySubJoin: 'Ansluter till instans...',
@@ -211,7 +211,7 @@ const TRANSLATIONS = {
         generateBtn: 'Generer lenke',
         copiedToast: 'Kopiert til utklippstavlen!',
         statTotalOnline: 'Totalt tilkoblet',
-        statPublicInstances: 'Offentlige instanser',
+        statPublicInstances: 'Offentlige',
         statOther: 'Annet',
         overlayTitle: 'Omdirigerer til ChilloutVR...',
         overlaySubJoin: 'Kobler til instans...',
@@ -246,7 +246,7 @@ const TRANSLATIONS = {
         generateBtn: 'リンクを生成',
         copiedToast: 'クリップボードにコピーしました！',
         statTotalOnline: 'オンライン合計',
-        statPublicInstances: '公開インスタンス',
+        statPublicInstances: '公開',
         statOther: 'その他',
         overlayTitle: 'ChilloutVRへリダイレクト中...',
         overlaySubJoin: 'インスタンスに参加中...',
@@ -281,7 +281,7 @@ const TRANSLATIONS = {
         generateBtn: '生成链接',
         copiedToast: '已复制到剪贴板！',
         statTotalOnline: '在线总数',
-        statPublicInstances: '公开实例',
+        statPublicInstances: '公开',
         statOther: '其他',
         overlayTitle: '正在重定向到 ChilloutVR...',
         overlaySubJoin: '正在加入实例...',
@@ -324,8 +324,8 @@ function saveLanguage(lang) {
 /** Get a translation string for the current language */
 function t(key) {
     return (TRANSLATIONS[currentLang] && TRANSLATIONS[currentLang][key]) ||
-           (TRANSLATIONS[DEFAULT_LANG][key]) ||
-           key;
+        (TRANSLATIONS[DEFAULT_LANG][key]) ||
+        key;
 }
 
 /** Apply translations to all [data-i18n] elements */

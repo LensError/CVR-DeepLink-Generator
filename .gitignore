@@ -16,3 +16,5 @@ yarn-error.log*
 # Node
 node_modules/
 .wrangler/
+
+CLAUDE.md
